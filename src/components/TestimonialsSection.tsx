@@ -24,8 +24,8 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section id="testimonials" className="relative py-32 px-6">
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-accent/10 rounded-full blur-3xl" />
+    <section id="testimonials" className="relative py-32 px-6 bg-muted/30">
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-secondary/5 rounded-full blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto">
         {/* Section header */}
@@ -53,7 +53,7 @@ const TestimonialsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.15 }}
-              className="glass-card p-8 relative group hover:border-primary/50 transition-all duration-500"
+              className="glass-card p-8 relative group hover:border-primary/30 transition-all duration-500"
             >
               <Quote className="absolute top-6 right-6 w-8 h-8 text-primary/20" />
               
@@ -71,7 +71,7 @@ const TestimonialsSection = () => {
 
               {/* Author */}
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-lg font-semibold text-primary-foreground">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-lg font-semibold text-primary-foreground">
                   {testimonial.name.split(' ').map(n => n[0]).join('')}
                 </div>
                 <div>

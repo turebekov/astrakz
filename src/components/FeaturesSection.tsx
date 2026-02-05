@@ -36,9 +36,9 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section id="features" className="relative py-32 px-6">
-      {/* Background glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-3xl" />
+    <section id="features" className="relative py-32 px-6 bg-muted/30">
+      {/* Background accent */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-secondary/5 rounded-full blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto">
         {/* Section header */}
@@ -70,9 +70,9 @@ const FeaturesSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group glass-card p-8 hover:border-primary/50 transition-all duration-500"
+              className="group glass-card p-8 hover:border-primary/30 transition-all duration-500"
             >
-              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 border border-primary/30 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-primary/20 transition-all duration-300">
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 border border-border flex items-center justify-center mb-6 group-hover:scale-110 group-hover:border-primary/30 transition-all duration-300">
                 <feature.icon className="w-7 h-7 text-primary" />
               </div>
               <h3 className="font-display text-xl font-semibold mb-3 text-foreground">

@@ -62,12 +62,15 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         // Custom Astra colors
-        "glass-bg": "hsl(var(--glass-bg))",
-        "glass-border": "hsl(var(--glass-border))",
-        "space-dark": "hsl(var(--space-dark))",
-        "space-navy": "hsl(var(--space-navy))",
-        "glow-violet": "hsl(var(--glow-violet))",
-        "glow-cyan": "hsl(var(--glow-cyan))",
+        coral: {
+          DEFAULT: "hsl(var(--coral))",
+          light: "hsl(var(--coral-light))",
+        },
+        teal: {
+          DEFAULT: "hsl(var(--teal))",
+          light: "hsl(var(--teal-light))",
+        },
+        surface: "hsl(var(--surface))",
       },
       borderRadius: {
         lg: "var(--radius)",
