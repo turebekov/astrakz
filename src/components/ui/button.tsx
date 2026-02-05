@@ -16,9 +16,9 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         // Astra custom variants
-        hero: "bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 hover:scale-105 active:scale-100",
-        glass: "bg-secondary/50 backdrop-blur-xl border border-border text-foreground hover:bg-secondary/80 hover:border-primary/50",
-        glow: "bg-primary/20 border border-primary/50 text-primary hover:bg-primary/30 hover:border-primary hover:shadow-lg hover:shadow-primary/20",
+        hero: "bg-gradient-to-r from-primary to-secondary text-primary-foreground font-semibold shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 hover:scale-105 active:scale-100",
+        glass: "bg-muted/50 backdrop-blur-xl border border-border text-foreground hover:bg-muted hover:border-primary/50",
+        glow: "bg-primary/10 border border-primary/30 text-primary hover:bg-primary/20 hover:border-primary hover:shadow-lg hover:shadow-primary/20",
       },
       size: {
         default: "h-10 px-4 py-2",

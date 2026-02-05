@@ -4,11 +4,11 @@ import { ArrowRight, Sparkles } from "lucide-react";
 
 const CTASection = () => {
   return (
-    <section className="relative py-32 px-6 overflow-hidden">
+    <section className="relative py-32 px-6 overflow-hidden bg-background">
       {/* Background effects */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-primary/10" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/20 rounded-full blur-3xl" />
-      <div className="absolute top-1/4 right-1/4 w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-pulse-glow" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute top-1/4 right-1/4 w-80 h-80 bg-secondary/5 rounded-full blur-3xl" />
 
       <div className="relative max-w-4xl mx-auto text-center">
         <motion.div
@@ -16,7 +16,7 @@ const CTASection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="glass-card p-12 md:p-16 glow-violet"
+          className="glass-card p-12 md:p-16 glow-coral"
         >
           <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-4 py-2 mb-8">
             <Sparkles className="w-4 h-4 text-primary" />

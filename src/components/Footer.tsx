@@ -2,13 +2,13 @@ import { Sparkles, Twitter, Linkedin, Github } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="relative border-t border-border py-16 px-6">
+    <footer className="relative border-t border-border py-16 px-6 bg-muted/30">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
                 <Sparkles className="w-5 h-5 text-primary-foreground" />
               </div>
               <span className="font-display text-xl font-bold text-foreground">Astra</span>
@@ -17,13 +17,13 @@ const Footer = () => {
               The future of AI-powered customer conversations. Built for modern businesses.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-lg bg-secondary/50 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors">
+              <a href="#" className="w-10 h-10 rounded-lg bg-muted border border-border flex items-center justify-center hover:bg-primary/10 hover:text-primary hover:border-primary/30 transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-lg bg-secondary/50 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors">
+              <a href="#" className="w-10 h-10 rounded-lg bg-muted border border-border flex items-center justify-center hover:bg-primary/10 hover:text-primary hover:border-primary/30 transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-lg bg-secondary/50 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors">
+              <a href="#" className="w-10 h-10 rounded-lg bg-muted border border-border flex items-center justify-center hover:bg-primary/10 hover:text-primary hover:border-primary/30 transition-colors">
                 <Github className="w-5 h-5" />
               </a>
             </div>
