@@ -1,4 +1,4 @@
-import { Sparkles, Twitter, Linkedin, Github } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -8,40 +8,29 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-                <Sparkles className="w-5 h-5 text-primary-foreground" />
+              <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
+                <MessageCircle className="w-5 h-5 text-primary-foreground" />
               </div>
               <span className="font-display text-xl font-bold text-foreground">Astra</span>
             </div>
             <p className="text-muted-foreground text-sm mb-6">
-              The future of AI-powered customer conversations. Built for modern businesses.
+              Онлайн-чат и мессенджеры для бизнеса. Общайтесь с клиентами там, где им удобно.
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-lg bg-muted border border-border flex items-center justify-center hover:bg-primary/10 hover:text-primary hover:border-primary/30 transition-colors">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-lg bg-muted border border-border flex items-center justify-center hover:bg-primary/10 hover:text-primary hover:border-primary/30 transition-colors">
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-lg bg-muted border border-border flex items-center justify-center hover:bg-primary/10 hover:text-primary hover:border-primary/30 transition-colors">
-                <Github className="w-5 h-5" />
-              </a>
-            </div>
           </div>
 
           {/* Links */}
           {[
             {
-              title: "Product",
-              links: ["Features", "Integrations", "Pricing", "Changelog"],
+              title: "Продукт",
+              links: ["Онлайн-чат", "Мессенджеры", "ИИ-ассистент", "Аналитика"],
             },
             {
-              title: "Company",
-              links: ["About", "Blog", "Careers", "Contact"],
+              title: "Компания",
+              links: ["О нас", "Блог", "Вакансии", "Контакты"],
             },
             {
-              title: "Resources",
-              links: ["Documentation", "API Reference", "Help Center", "Status"],
+              title: "Поддержка",
+              links: ["Документация", "API", "База знаний", "Статус"],
             },
           ].map((section, index) => (
             <div key={index}>
@@ -62,11 +51,11 @@ const Footer = () => {
         {/* Bottom */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © 2025 Astra AI. All rights reserved.
+            © 2025 Astra. Все права защищены.
           </p>
           <div className="flex gap-6">
-            <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Privacy Policy</a>
-            <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Terms of Service</a>
+            <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Политика конфиденциальности</a>
+            <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Условия использования</a>
           </div>
         </div>
       </div>

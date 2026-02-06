@@ -64,11 +64,8 @@ export default {
         // Custom Astra colors
         coral: {
           DEFAULT: "hsl(var(--coral))",
+          dark: "hsl(var(--coral-dark))",
           light: "hsl(var(--coral-light))",
-        },
-        teal: {
-          DEFAULT: "hsl(var(--teal))",
-          light: "hsl(var(--teal-light))",
         },
         surface: "hsl(var(--surface))",
       },

@@ -20,13 +20,13 @@
     --primary: 8 96% 60%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 170 83% 34%;
+    --secondary: 8 96% 60%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 210 20% 96%;
     --muted-foreground: 220 10% 45%;
 
-    --accent: 170 83% 34%;
+    --accent: 8 96% 60%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -40,9 +40,8 @@
 
     /* Custom Astra tokens */
     --coral: 8 96% 60%;
-    --teal: 170 83% 34%;
+    --coral-dark: 8 96% 50%;
     --coral-light: 8 96% 95%;
-    --teal-light: 170 83% 95%;
     --surface: 210 20% 98%;
     --surface-hover: 210 20% 95%;
 
@@ -65,11 +64,11 @@
     --popover-foreground: 0 0% 98%;
     --primary: 8 96% 60%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 170 83% 34%;
+    --secondary: 8 96% 60%;
     --secondary-foreground: 0 0% 100%;
     --muted: 220 15% 18%;
     --muted-foreground: 220 10% 60%;
-    --accent: 170 83% 34%;
+    --accent: 8 96% 60%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
@@ -112,16 +111,11 @@
   }
 
   .gradient-text {
-    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
-    background-size: 200% auto;
+    @apply text-primary;
   }
 
   .glow-coral {
     box-shadow: 0 0 40px hsl(8 96% 60% / 0.15), 0 0 80px hsl(8 96% 60% / 0.05);
-  }
-
-  .glow-teal {
-    box-shadow: 0 0 40px hsl(170 83% 34% / 0.15), 0 0 80px hsl(170 83% 34% / 0.05);
   }
 
   .surface-card {

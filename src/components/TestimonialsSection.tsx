@@ -3,21 +3,21 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Alex Thompson",
-    role: "CTO at TechFlow",
-    content: "Astra reduced our support ticket volume by 60% while improving customer satisfaction scores. It's been transformative for our team.",
+    name: "Алексей Сидоров",
+    role: "Директор, ООО «ТехноМир»",
+    content: "После установки Astra конверсия сайта выросла на 40%. Клиенты получают ответы мгновенно, а менеджеры экономят часы на рутине.",
     rating: 5,
   },
   {
-    name: "Sarah Chen",
-    role: "VP of Customer Success, Nexus",
-    content: "The AI understands context like no other solution we've tried. Our customers love the natural, helpful conversations.",
+    name: "Елена Морозова",
+    role: "Руководитель отдела продаж, ShopOnline",
+    content: "Наконец-то все мессенджеры в одном окне! Операторы больше не переключаются между приложениями, а клиенты довольны скоростью ответов.",
     rating: 5,
   },
   {
-    name: "Michael Roberts",
-    role: "Founder, StartupXYZ",
-    content: "Setup took minutes, not months. Astra integrated seamlessly with our existing tools and started delivering value immediately.",
+    name: "Михаил Козлов",
+    role: "Основатель, Startup.pro",
+    content: "Установка заняла 5 минут. Без программистов, без головной боли. ИИ-бот закрывает 70% вопросов автоматически.",
     rating: 5,
   },
 ];
@@ -25,7 +25,7 @@ const testimonials = [
 const TestimonialsSection = () => {
   return (
     <section id="testimonials" className="relative py-32 px-6 bg-muted/30">
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-secondary/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/5 rounded-full blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto">
         {/* Section header */}
@@ -36,11 +36,11 @@ const TestimonialsSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-primary font-semibold text-sm uppercase tracking-wider">Testimonials</span>
+          <span className="text-primary font-semibold text-sm uppercase tracking-wider">Отзывы</span>
           <h2 className="font-display text-4xl md:text-5xl font-bold mt-4 mb-6">
-            Trusted by Industry
+            Нам доверяют
             <br />
-            <span className="gradient-text">Leaders Worldwide</span>
+            <span className="gradient-text">300 000+ компаний</span>
           </h2>
         </motion.div>
 
@@ -66,12 +66,12 @@ const TestimonialsSection = () => {
 
               {/* Content */}
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                "{testimonial.content}"
+                «{testimonial.content}»
               </p>
 
               {/* Author */}
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-lg font-semibold text-primary-foreground">
+                <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-lg font-semibold text-primary-foreground">
                   {testimonial.name.split(' ').map(n => n[0]).join('')}
                 </div>
                 <div>
