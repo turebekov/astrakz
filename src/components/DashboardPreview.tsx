@@ -5,7 +5,7 @@ const DashboardPreview = () => {
   return (
     <section id="demo" className="relative py-32 px-6 bg-background overflow-hidden">
       {/* Background effects */}
-      <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-icon/5 rounded-full blur-3xl" />
       
       <div className="relative max-w-7xl mx-auto">
         {/* Section header */}
@@ -16,7 +16,7 @@ const DashboardPreview = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-primary font-semibold text-sm uppercase tracking-wider">Интерфейс</span>
+          <span className="text-icon font-semibold text-sm uppercase tracking-wider">Интерфейс</span>
           <h2 className="font-display text-4xl md:text-5xl font-bold mt-4 mb-6">
             Удобный рабочий
             <br />
@@ -41,8 +41,8 @@ const DashboardPreview = () => {
               {/* Header */}
               <div className="bg-background border-b border-border px-6 py-4 flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
-                    <MessageSquare className="w-5 h-5 text-primary-foreground" />
+                  <div className="w-10 h-10 rounded-xl bg-icon flex items-center justify-center">
+                    <MessageSquare className="w-5 h-5 text-white" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground">Панель оператора</h3>
@@ -63,7 +63,7 @@ const DashboardPreview = () => {
                     <input 
                       type="text" 
                       placeholder="Поиск диалогов..." 
-                      className="w-full px-4 py-2 rounded-lg bg-muted border border-border text-sm focus:outline-none focus:border-primary/50"
+                      className="w-full px-4 py-2 rounded-lg bg-muted border border-border text-sm focus:outline-none focus:border-icon/50"
                     />
                   </div>
                   <div className="divide-y divide-border">
@@ -73,10 +73,10 @@ const DashboardPreview = () => {
                       { name: "Мария Козлова", message: "Спасибо за помощь!", time: "1 час", unread: false, source: "Сайт" },
                       { name: "Дмитрий Волков", message: "Есть ли скидки?", time: "2 часа", unread: false, source: "ВКонтакте" },
                     ].map((chat, i) => (
-                      <div key={i} className={`p-4 hover:bg-muted/50 cursor-pointer transition-colors ${i === 0 ? 'bg-primary/5 border-l-2 border-l-primary' : ''}`}>
+                      <div key={i} className={`p-4 hover:bg-muted/50 cursor-pointer transition-colors ${i === 0 ? 'bg-icon/5 border-l-2 border-l-icon' : ''}`}>
                         <div className="flex items-start gap-3">
-                          <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
-                            <User className="w-5 h-5 text-primary" />
+                          <div className="w-10 h-10 rounded-full bg-icon/20 flex items-center justify-center">
+                            <User className="w-5 h-5 text-icon" />
                           </div>
                           <div className="flex-1 min-w-0">
                             <div className="flex items-center justify-between">
@@ -84,9 +84,9 @@ const DashboardPreview = () => {
                               <span className="text-xs text-muted-foreground">{chat.time}</span>
                             </div>
                             <p className="text-sm text-muted-foreground truncate">{chat.message}</p>
-                            <span className="text-xs text-primary mt-1 inline-block">{chat.source}</span>
+                            <span className="text-xs text-icon mt-1 inline-block">{chat.source}</span>
                           </div>
-                          {chat.unread && <span className="w-2 h-2 rounded-full bg-primary"></span>}
+                          {chat.unread && <span className="w-2 h-2 rounded-full bg-icon"></span>}
                         </div>
                       </div>
                     ))}
@@ -98,8 +98,8 @@ const DashboardPreview = () => {
                   {/* Chat header */}
                   <div className="p-4 border-b border-border flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
-                        <User className="w-5 h-5 text-primary" />
+                      <div className="w-10 h-10 rounded-full bg-icon/20 flex items-center justify-center">
+                        <User className="w-5 h-5 text-icon" />
                       </div>
                       <div>
                         <h4 className="font-medium text-foreground">Анна Смирнова</h4>
@@ -110,7 +110,7 @@ const DashboardPreview = () => {
                       </div>
                     </div>
                     <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                      <Clock className="w-4 h-4" />
+                      <Clock className="w-4 h-4 text-icon" />
                       Москва, 15:32
                     </div>
                   </div>
@@ -119,8 +119,8 @@ const DashboardPreview = () => {
                   <div className="flex-1 p-4 space-y-4 overflow-y-auto">
                     {/* Customer message */}
                     <div className="flex gap-3">
-                      <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                        <User className="w-4 h-4 text-primary" />
+                      <div className="w-8 h-8 rounded-full bg-icon/20 flex items-center justify-center flex-shrink-0">
+                        <User className="w-4 h-4 text-icon" />
                       </div>
                       <div className="bg-muted rounded-2xl rounded-tl-md px-4 py-3 max-w-md">
                         <p className="text-sm text-foreground">Здравствуйте! Подскажите, пожалуйста, как долго идёт доставка в Санкт-Петербург?</p>
@@ -130,7 +130,7 @@ const DashboardPreview = () => {
 
                     {/* Operator message */}
                     <div className="flex gap-3 justify-end">
-                      <div className="bg-primary text-primary-foreground rounded-2xl rounded-tr-md px-4 py-3 max-w-md">
+                      <div className="bg-icon text-white rounded-2xl rounded-tr-md px-4 py-3 max-w-md">
                         <p className="text-sm">Добрый день, Анна! Доставка в Санкт-Петербург занимает 2-3 рабочих дня. При заказе от 3000₽ — бесплатно 🚚</p>
                         <div className="flex items-center justify-end gap-1 mt-1">
                           <span className="text-xs opacity-70">15:31</span>
@@ -141,8 +141,8 @@ const DashboardPreview = () => {
 
                     {/* Customer message */}
                     <div className="flex gap-3">
-                      <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                        <User className="w-4 h-4 text-primary" />
+                      <div className="w-8 h-8 rounded-full bg-icon/20 flex items-center justify-center flex-shrink-0">
+                        <User className="w-4 h-4 text-icon" />
                       </div>
                       <div className="bg-muted rounded-2xl rounded-tl-md px-4 py-3 max-w-md">
                         <p className="text-sm text-foreground">Отлично! А можно оплатить при получении?</p>
@@ -152,11 +152,11 @@ const DashboardPreview = () => {
 
                     {/* Typing indicator */}
                     <div className="flex gap-3 justify-end">
-                      <div className="bg-primary/10 border border-primary/20 rounded-2xl px-4 py-3">
+                      <div className="bg-icon/10 border border-icon/20 rounded-2xl px-4 py-3">
                         <div className="flex gap-1">
-                          <span className="w-2 h-2 rounded-full bg-primary animate-bounce" style={{ animationDelay: '0ms' }}></span>
-                          <span className="w-2 h-2 rounded-full bg-primary animate-bounce" style={{ animationDelay: '150ms' }}></span>
-                          <span className="w-2 h-2 rounded-full bg-primary animate-bounce" style={{ animationDelay: '300ms' }}></span>
+                          <span className="w-2 h-2 rounded-full bg-icon animate-bounce" style={{ animationDelay: '0ms' }}></span>
+                          <span className="w-2 h-2 rounded-full bg-icon animate-bounce" style={{ animationDelay: '150ms' }}></span>
+                          <span className="w-2 h-2 rounded-full bg-icon animate-bounce" style={{ animationDelay: '300ms' }}></span>
                         </div>
                       </div>
                     </div>
@@ -171,7 +171,7 @@ const DashboardPreview = () => {
                       <input 
                         type="text" 
                         placeholder="Введите сообщение..." 
-                        className="flex-1 px-4 py-3 rounded-xl bg-muted border border-border text-sm focus:outline-none focus:border-primary/50"
+                        className="flex-1 px-4 py-3 rounded-xl bg-muted border border-border text-sm focus:outline-none focus:border-icon/50"
                       />
                       <button className="p-2 rounded-lg hover:bg-muted transition-colors">
                         <Smile className="w-5 h-5 text-muted-foreground" />

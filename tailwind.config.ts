@@ -67,6 +67,7 @@ export default {
           dark: "hsl(var(--coral-dark))",
           light: "hsl(var(--coral-light))",
         },
+        icon: "hsl(var(--icon))",
         surface: "hsl(var(--surface))",
       },
       borderRadius: {

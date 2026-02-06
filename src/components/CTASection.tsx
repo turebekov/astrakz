@@ -17,9 +17,9 @@ const CTASection = () => {
           transition={{ duration: 0.6 }}
           className="glass-card p-12 md:p-16 glow-coral"
         >
-          <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-4 py-2 mb-8">
-            <MessageCircle className="w-4 h-4 text-primary" />
-            <span className="text-sm text-primary font-medium">Начните бесплатно прямо сейчас</span>
+          <div className="inline-flex items-center gap-2 bg-icon/10 border border-icon/30 rounded-full px-4 py-2 mb-8">
+            <MessageCircle className="w-4 h-4 text-icon" />
+            <span className="text-sm text-icon font-medium">Начните бесплатно прямо сейчас</span>
           </div>
 
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6">

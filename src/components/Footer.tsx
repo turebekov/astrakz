@@ -2,14 +2,14 @@ import { MessageCircle } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="relative border-t border-border py-16 px-6 bg-muted/30">
+    <footer className="relative border-t border-border py-16 px-6 bg-card">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
-                <MessageCircle className="w-5 h-5 text-primary-foreground" />
+              <div className="w-10 h-10 rounded-xl bg-icon flex items-center justify-center">
+                <MessageCircle className="w-5 h-5 text-white" />
               </div>
               <span className="font-display text-xl font-bold text-foreground">Astra</span>
             </div>

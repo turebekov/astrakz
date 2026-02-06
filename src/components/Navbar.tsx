@@ -12,8 +12,8 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between glass rounded-2xl px-6 py-3 shadow-sm">
         <div className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
-            <MessageCircle className="w-5 h-5 text-primary-foreground" />
+          <div className="w-10 h-10 rounded-xl bg-icon flex items-center justify-center">
+            <MessageCircle className="w-5 h-5 text-white" />
           </div>
           <span className="font-display text-xl font-bold text-foreground">Astra</span>
         </div>
