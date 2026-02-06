@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Sparkles } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 
 const Navbar = () => {
   return (
@@ -12,25 +12,25 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between glass rounded-2xl px-6 py-3 shadow-sm">
         <div className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-            <Sparkles className="w-5 h-5 text-primary-foreground" />
+          <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
+            <MessageCircle className="w-5 h-5 text-primary-foreground" />
           </div>
           <span className="font-display text-xl font-bold text-foreground">Astra</span>
         </div>
 
         <div className="hidden md:flex items-center gap-8">
-          <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">Features</a>
-          <a href="#demo" className="text-muted-foreground hover:text-foreground transition-colors">Demo</a>
-          <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">Pricing</a>
-          <a href="#testimonials" className="text-muted-foreground hover:text-foreground transition-colors">Testimonials</a>
+          <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">Возможности</a>
+          <a href="#demo" className="text-muted-foreground hover:text-foreground transition-colors">Демо</a>
+          <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">Тарифы</a>
+          <a href="#testimonials" className="text-muted-foreground hover:text-foreground transition-colors">Отзывы</a>
         </div>
 
         <div className="flex items-center gap-3">
           <Button variant="ghost" size="sm" className="hidden sm:inline-flex">
-            Sign In
+            Войти
           </Button>
           <Button variant="hero" size="sm">
-            Get Started
+            Попробовать
           </Button>
         </div>
       </div>
