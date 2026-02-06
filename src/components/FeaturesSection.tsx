@@ -36,9 +36,9 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section id="features" className="relative py-32 px-6 bg-muted/30">
+    <section id="features" className="relative py-32 px-6 bg-card">
       {/* Background accent */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-icon/5 rounded-full blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto">
         {/* Section header */}
@@ -49,7 +49,7 @@ const FeaturesSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
-          <span className="text-primary font-semibold text-sm uppercase tracking-wider">Возможности</span>
+          <span className="text-icon font-semibold text-sm uppercase tracking-wider">Возможности</span>
           <h2 className="font-display text-4xl md:text-5xl font-bold mt-4 mb-6">
             Всё для общения
             <br />
@@ -70,10 +70,10 @@ const FeaturesSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group glass-card p-8 hover:border-primary/30 transition-all duration-500"
+              className="group glass-card p-8 hover:border-icon/50 transition-all duration-500"
             >
-              <div className="w-14 h-14 rounded-2xl bg-primary/10 border border-border flex items-center justify-center mb-6 group-hover:scale-110 group-hover:border-primary/30 transition-all duration-300">
-                <feature.icon className="w-7 h-7 text-primary" />
+              <div className="w-14 h-14 rounded-2xl bg-icon/10 border border-border flex items-center justify-center mb-6 group-hover:scale-110 group-hover:border-icon/50 transition-all duration-300">
+                <feature.icon className="w-7 h-7 text-icon" />
               </div>
               <h3 className="font-display text-xl font-semibold mb-3 text-foreground">
                 {feature.title}

@@ -18,9 +18,9 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-2 mb-8"
+          className="inline-flex items-center gap-2 bg-card border border-border rounded-full px-4 py-2 mb-8 shadow-sm"
         >
-          <MessageCircle className="w-4 h-4 text-primary" />
+          <MessageCircle className="w-4 h-4 text-icon" />
           <span className="text-sm text-foreground font-medium">Онлайн-чат для сайта №1 в России</span>
         </motion.div>
 
@@ -72,13 +72,13 @@ const HeroSection = () => {
           className="flex flex-wrap justify-center gap-8 md:gap-16"
         >
           {[
-            { icon: MessageCircle, value: "10М+", label: "Сообщений в день" },
-            { icon: Users, value: "300 000+", label: "Компаний" },
-            { icon: Clock, value: "24/7", label: "Техподдержка" },
+            { Icon: MessageCircle, value: "10М+", label: "Сообщений в день" },
+            { Icon: Users, value: "300 000+", label: "Компаний" },
+            { Icon: Clock, value: "24/7", label: "Техподдержка" },
           ].map((stat, index) => (
             <div key={index} className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-xl bg-muted border border-border flex items-center justify-center">
-                <stat.icon className="w-6 h-6 text-primary" />
+              <div className="w-12 h-12 rounded-xl bg-card border border-border flex items-center justify-center shadow-sm">
+                <stat.Icon className="w-6 h-6 text-icon" />
               </div>
               <div className="text-left">
                 <div className="font-display text-2xl font-bold text-foreground">{stat.value}</div>
