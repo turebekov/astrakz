@@ -21,7 +21,7 @@ const HeroSection = () => {
           className="inline-flex items-center gap-2 bg-card border border-border rounded-full px-4 py-2 mb-8 shadow-sm"
         >
           <MessageCircle className="w-4 h-4 text-icon" />
-          <span className="text-sm text-foreground font-medium">Онлайн-чат для сайта №1 в России</span>
+          <span className="text-sm text-foreground font-medium">Онлайн-чат для сайта №1 в Казахстане</span>
         </motion.div>
 
         {/* Headline */}
