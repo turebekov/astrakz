@@ -68,10 +68,10 @@ const DashboardPreview = () => {
                   </div>
                   <div className="divide-y divide-border">
                     {[
-                      { name: "Анна Смирнова", message: "Здравствуйте! Подскажите про доставку", time: "2 мин", unread: true, source: "WhatsApp" },
-                      { name: "Иван Петров", message: "Когда будет готов заказ?", time: "15 мин", unread: true, source: "Telegram" },
-                      { name: "Мария Козлова", message: "Спасибо за помощь!", time: "1 час", unread: false, source: "Сайт" },
-                      { name: "Дмитрий Волков", message: "Есть ли скидки?", time: "2 часа", unread: false, source: "ВКонтакте" },
+                      { name: "Айжан Қасымова", message: "Сәлеметсіз бе! Жеткізу туралы айтыңызшы", time: "2 мин", unread: true, source: "WhatsApp" },
+                      { name: "Нұрлан Ахметов", message: "Тапсырыс қашан дайын болады?", time: "15 мин", unread: true, source: "Telegram" },
+                      { name: "Дана Бекболатова", message: "Көмегіңізге рахмет!", time: "1 час", unread: false, source: "Сайт" },
+                      { name: "Бауыржан Сейітов", message: "Жеңілдіктер бар ма?", time: "2 часа", unread: false, source: "Instagram" },
                     ].map((chat, i) => (
                       <div key={i} className={`p-4 hover:bg-muted/50 cursor-pointer transition-colors ${i === 0 ? 'bg-icon/5 border-l-2 border-l-icon' : ''}`}>
                         <div className="flex items-start gap-3">
@@ -102,7 +102,7 @@ const DashboardPreview = () => {
                         <User className="w-5 h-5 text-icon" />
                       </div>
                       <div>
-                        <h4 className="font-medium text-foreground">Анна Смирнова</h4>
+                        <h4 className="font-medium text-foreground">Айжан Қасымова</h4>
                         <p className="text-xs text-muted-foreground flex items-center gap-1">
                           <span className="w-2 h-2 rounded-full bg-green-500"></span>
                           Онлайн • WhatsApp
@@ -111,7 +111,7 @@ const DashboardPreview = () => {
                     </div>
                     <div className="flex items-center gap-2 text-xs text-muted-foreground">
                       <Clock className="w-4 h-4 text-icon" />
-                      Москва, 15:32
+                      Алматы, 18:32
                     </div>
                   </div>
 
@@ -123,7 +123,7 @@ const DashboardPreview = () => {
                         <User className="w-4 h-4 text-icon" />
                       </div>
                       <div className="bg-muted rounded-2xl rounded-tl-md px-4 py-3 max-w-md">
-                        <p className="text-sm text-foreground">Здравствуйте! Подскажите, пожалуйста, как долго идёт доставка в Санкт-Петербург?</p>
+                        <p className="text-sm text-foreground">Сәлеметсіз бе! Алматыға жеткізу қанша уақыт алады?</p>
                         <span className="text-xs text-muted-foreground mt-1 block">15:30</span>
                       </div>
                     </div>
@@ -131,7 +131,7 @@ const DashboardPreview = () => {
                     {/* Operator message */}
                     <div className="flex gap-3 justify-end">
                       <div className="bg-icon text-white rounded-2xl rounded-tr-md px-4 py-3 max-w-md">
-                        <p className="text-sm">Добрый день, Анна! Доставка в Санкт-Петербург занимает 2-3 рабочих дня. При заказе от 3000₽ — бесплатно 🚚</p>
+                        <p className="text-sm">Сәлеметсіз бе, Айжан! Алматыға жеткізу 1-2 жұмыс күн. 5000₸-ден тапсырыс берсеңіз — тегін 🚚</p>
                         <div className="flex items-center justify-end gap-1 mt-1">
                           <span className="text-xs opacity-70">15:31</span>
                           <CheckCheck className="w-4 h-4 opacity-70" />
@@ -145,7 +145,7 @@ const DashboardPreview = () => {
                         <User className="w-4 h-4 text-icon" />
                       </div>
                       <div className="bg-muted rounded-2xl rounded-tl-md px-4 py-3 max-w-md">
-                        <p className="text-sm text-foreground">Отлично! А можно оплатить при получении?</p>
+                        <p className="text-sm text-foreground">Жақсы! Алғанда төлеуге бола ма?</p>
                         <span className="text-xs text-muted-foreground mt-1 block">15:32</span>
                       </div>
                     </div>

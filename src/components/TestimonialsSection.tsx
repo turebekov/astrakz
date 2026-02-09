@@ -3,20 +3,20 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Алексей Сидоров",
-    role: "Директор, ООО «ТехноМир»",
+    name: "Асқар Сәрсенбаев",
+    role: "Директор, ТОО «ТехноМир»",
     content: "После установки Astra конверсия сайта выросла на 40%. Клиенты получают ответы мгновенно, а менеджеры экономят часы на рутине.",
     rating: 5,
   },
   {
-    name: "Елена Морозова",
-    role: "Руководитель отдела продаж, ShopOnline",
+    name: "Айгүл Нұрланова",
+    role: "Руководитель отдела продаж, ShopOnline.kz",
     content: "Наконец-то все мессенджеры в одном окне! Операторы больше не переключаются между приложениями, а клиенты довольны скоростью ответов.",
     rating: 5,
   },
   {
-    name: "Михаил Козлов",
-    role: "Основатель, Startup.pro",
+    name: "Ерлан Жұмабеков",
+    role: "Основатель, Startup.kz",
     content: "Установка заняла 5 минут. Без программистов, без головной боли. ИИ-бот закрывает 70% вопросов автоматически.",
     rating: 5,
   },
@@ -40,7 +40,7 @@ const TestimonialsSection = () => {
           <h2 className="font-display text-4xl md:text-5xl font-bold mt-4 mb-6">
             Нам доверяют
             <br />
-            <span className="gradient-text">300 000+ компаний</span>
+            <span className="gradient-text">компании Казахстана</span>
           </h2>
         </motion.div>
 
